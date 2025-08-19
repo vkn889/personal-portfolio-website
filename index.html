@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Viraat Krishna Nellutla</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div id="nav-logo">Viraat Nellutla</div>
+        
+        <div class="hamburger" id="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        
+        <ul class="links" id="nav-links">
+            <li><a href="#start">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#achievements">Achievements</a></li>
+            <li><a href="#socials">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section class="start" id="start">
+            <div class="start-container">
+                <div class="intro">
+                    <p class="intro-tagline">Hey There! I'm</p>
+                    <h1 class="intro-name">Viraat Nellutla</h1>
+                    <p class="intro-desc">Currently: Exploring ML/AI</p>
+                    <a id="socialsbutton" style="border-radius: 25px; text-decoration: none;" href="#socials">Get In Touch!</a>                </div>
+            </div>
+            <div class="intro-image">
+                <img src="me.jpeg" alt="Viraat Nellutla">
+            </div>
+        </section>
+        <section class="about" id="about">
+            <div class="about-container">
+                <div class="about-content">
+                    <h1 class="about-title">My Story</h1>
+                    <div class="about-text">
+                        <div class="text-with-image left">
+                            <img src="me3.png" alt="FBLA Trophy" class="story-image">
+                            <p>
+                                My journey into technology began through FBLA & DECA, where I discovered my competitive spirit and passion. As a freshman, I achieved the ultimate goal of becoming a National Champion, followed by a 4th place finish at nationals during my sophomore year.
+                            </p>
+                        </div>
+                        <div class="text-with-image right">
+                            <img src="me2.png" alt="Healthcare Research" class="story-image">
+                            <p>
+                                During my sophomore year, my life took a profound turn when I learned that my mom had been diagnosed with breast cancer. This personal challenge sparked something deeper within me—a drive. This led me 
+                                to get back to the FBLA Nationals stage placing 4th at the end of my sophomore year
+                                Throughout the summer after my 10th grade I made an attempt to understand how technology could be used to make a real difference in healthcare and people's lives.
+                            </p>
+                        </div>
+                        <div class="text-with-image left">
+                            <img src="me4.png" alt="AI and ML Projects" class="story-image">
+                            <p>
+                                That pivotal moment led me to dive into research and discover the incredible world of machine learning and artificial intelligence. I've since built two CNNs (Convolutional Neural Networks), including a breast cancer prediction model that holds special meaning for me, and I'm currently working on another exciting project that pushes the boundaries of what I've learned.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="projects" id="projects">
+            <div class="projects-container">
+                <div class="project-content">
+                    <h1 class="projects-title">Projects</h1>
+                    <div class="projects-grid">
+
+                        <div class="project-box" onclick="window.open('https://github.com/vkn889/firstcnn', '_blank')">
+                            <div class="project-status completed">Completed</div>
+                            <h3 class="project-title">CIFAR-10 CNN</h3>
+                            <p class="project-description">
+                                This was a basic Convolutional Neural Network, the first I made! 
+                                This took the data set of CIFAR-10, which is a dataset containing a variety of categories, this was trained using a basic keras Sequential model with pooling, 
+                                convolutional 2D layers, and dense layers, although the accuracy was extremely low I am still hoping to experiment more with the project and get that accuracy up!
+                            </p>
+                            <div class="project-tech">
+                                <span class="tech-tag">Python</span>
+                                <span class="tech-tag">TensorFlow</span>
+                                <span class="tech-tag">CNN</span>
+                            </div>
+                        </div>
+
+                        <div class="project-box" onclick="window.open('https://github.com/vkn889/cifar100Cnn', '_blank')">
+                            <div class="project-status completed">Completed</div>
+                            <h3 class="project-title">CIFAR-100 CNN</h3>
+                            <p class="project-description">
+                                This project uses TensorFlow and Keras to implement a Convolutional Neural Network (CNN) for image classification from the CIFAR-100 dataset. 
+                                The model analyzes 32x32 color photos from 100 different categories, such as cars, animals, home goods, and landscapes. 
+                                The CNN architecture consists of dense layers with batch normalization and dropout for regularization after progressive convolutional layers (16→32→64→128 filters). 
+                                Classification on categories ranging from aquatic mammals to vehicles is achieved through training with 50,000 images using the Adam optimizer over 50 epochs. The implementation is perfect for multi-class image recognition tasks since it includes thorough evaluation with confusion matrix visualization to examine model performance across all 100 classes.
+
+                            </p>
+                            <div class="project-tech">
+                                <span class="tech-tag">Python</span>
+                                <span class="tech-tag">TensorFlow</span>
+                                <span class="tech-tag">Keras</span>
+                                <span class="tech-tag">Deep Learning</span>
+                            </div>
+                        </div>
+
+                        <div class="project-box" onclick="window.open('https://github.com/vkn889/breastCancerPredictorWithML', '_blank')">
+                            <div class="project-status in-progress">In Progress</div>
+                            <h3 class="project-title">Breast Cancer Prediction Model</h3>
+                            <p class="project-description">
+                                I engineered a comprehensive breast cancer prediction system using Python and scikit-learn that achieves nearly 90% accuracy in distinguishing between malignant and benign tumors, 
+                                demonstrating the powerful intersection of healthcare and artificial intelligence in supporting critical medical decisions. Built predictive models using logistic regression on the Wisconsin Breast Cancer dataset (569 patient samples), 
+                                analyzing 30+ tumor cell characteristics including radius, texture, perimeter, area, smoothness, compactness, and concavity measurements, while implementing comprehensive data preprocessing pipelines, 
+                                comparative analysis frameworks testing multiple machine learning algorithms including decision trees and ensemble methods, and robust model evaluation using confusion matrices, precision, recall, and ROC analysis. 
+                                Created interpretable decision boundaries and visualization tools for medical professionals, established feature importance rankings to identify most critical tumor characteristics, 
+                                and showcased how machine learning can augment medical diagnosis to potentially reduce diagnostic errors and support healthcare professionals in making more informed treatment decisions. I do plan to use this for further researches and study
+                                the cancer cells for future projects where I can implement this network.
+                            </p>
+                            <div class="project-tech">
+                                <span class="tech-tag">Python</span>
+                                <span class="tech-tag">Scikit-learn</span>
+                                <span class="tech-tag">Pandas</span>
+                                <span class="tech-tag">Data Analysis</span>
+                                <span class="tech-tag">Statistical Modeling</span>
+                                <span class="tech-tag">Model Validation</span>
+
+                            </div>
+                        </div>
+
+                        <div class="project-box" onclick="window.open('https://github.com/yourusername/cancer-blood-detection', '_blank')">
+                            <div class="project-status in-progress">In Progress</div>
+                            <h3 class="project-title">ML Cancer Detection App from Blood Samples</h3>
+                            <p class="project-description">
+                                Analyzing factors affecting cancer diagnosis through blood sample data. 
+                                Research-focused project exploring biomarkers and their correlation with cancer detection.
+                            </p>
+                            <div class="project-tech">
+                                <span class="tech-tag">Python</span>
+                                <span class="tech-tag">Data Analysis</span>
+                                <span class="tech-tag">Research</span>
+                            </div>
+                        </div>
+
+                        <div class="project-box" onclick="window.open('https://github.com/yourusername/ml-cancer-detection-app', '_blank')">
+                            <div class="project-status in-progress">In Progress</div>
+                            <h3 class="project-title">NLP + Finance: Algorithmic Trading</h3>
+                            <p class="project-description">
+                                LSTMs, and BERT to analyze the sentiment of financial tweets. 
+                                The ultimate goal is to predict long-term stock market trends, 
+                                which can help us manage our wealth and anticipate potential booms and busts.
+                            </p>
+                            <div class="project-tech">
+                                <span class="tech-tag">Streamlit</span>
+                                <span class="tech-tag">Python</span>
+                                <span class="tech-tag">Web App</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="skills" id="skills">
+            <div class="skills-container">
+                <h1 class="skills-title">
+                    My Skills
+                </h1>
+                <p class="skills-description">
+                    My skills lie in computer science including machine learning with Python,
+                    web development with HTML, CSS and JavaScript, additionally my coursework has taught
+                    me other languages such as Java or SQL from my FBLA experiences
+                </p>
+                
+                <div class="skills-grid">
+                    <div class="skill-category">
+                        <h3 class="category-title">Programming Languages</h3>
+                        <div class="skills-list">
+                            <span class="skill-tag">Python</span>
+                            <span class="skill-tag">JavaScript</span>
+                            <span class="skill-tag">Java</span>
+                            <span class="skill-tag">SQL</span>
+                            <span class="skill-tag">HTML</span>
+                            <span class="skill-tag">CSS</span>
+                            <span class="skill-tag">Currently Learning MERN Stack</span>
+                        </div>
+                    </div>
+
+                    <div class="skill-category">
+                        <h3 class="category-title">Machine Learning & AI</h3>
+                        <div class="skills-list">
+                            <span class="skill-tag">TensorFlow</span>
+                            <span class="skill-tag">Scikit-learn</span>
+                            <span class="skill-tag">Pandas</span>
+                            <span class="skill-tag">Keras</span>
+                            <span class="skill-tag">NLP</span>
+                            <span class="skill-tag">Deep Learning</span>
+                            <span class="skill-tag">Neural Networks</span>
+                            <span class="skill-tag">Data Analytics</span>
+                        </div>
+                    </div>
+
+                    <div class="skill-category">
+                        <h3 class="category-title">Systems & Networks</h3>
+                        <div class="skills-list">
+                            <span class="skill-tag">Network Design</span>
+                            <span class="skill-tag">Management Information Systems</span>
+                            <span class="skill-tag">Database Management</span>
+                            <span class="skill-tag">System Administration</span>
+                        </div>
+                    </div>
+
+                    <div class="skill-category">
+                        <h3 class="category-title" id>Tools & Frameworks</h3>
+                        <div class="skills-list">
+                            <span class="skill-tag">Streamlit</span>
+                            <span class="skill-tag">Git</span>
+                            <span class="skill-tag">Jupyter</span>
+                            <span class="skill-tag">VS Code</span>
+                            <span class="skill-tag">Google Colab</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="achievements" id="achievements">
+            <div class="achievements-container">
+                <h1 class="achievements-title">Achievements</h1>
+                <p class="achievements-description">
+                    Recognition and awards from various competitions and conferences in technology and business
+                </p>
+                
+                <div class="achievements-grid">
+                    <div class="achievement-card">
+                        <div class="achievement-place first">1st Place</div>
+                        <h3 class="achievement-title">Network Design</h3>
+                        <p class="achievement-event">National FBLA 2024 Conference</p>
+                        <p class="achievement-date">Jul 2024</p>
+                        <div class="achievement-org">
+                            <span class="org-logo">🏆</span>
+                            <span>Future Business Leaders of America, Inc. (FBLA)</span>
+                        </div>
+                    </div>
+
+                    <div class="achievement-card">
+                        <div class="achievement-place first">1st Place</div>
+                        <h3 class="achievement-title">Management Information Systems</h3>
+                        <p class="achievement-event">FBLA Regionals</p>
+                        <p class="achievement-date">Feb 2025</p>
+                        <div class="achievement-org">
+                            <span class="org-logo">🏆</span>
+                            <span>Future Business Leaders of America, Inc. (FBLA)</span>
+                        </div>
+                    </div>
+
+                    <div class="achievement-card">
+                        <div class="achievement-place first">1st Place</div>
+                        <h3 class="achievement-title">Network Design</h3>
+                        <p class="achievement-event">FBLA Regionals</p>
+                        <p class="achievement-date">Feb 2024</p>
+                        <div class="achievement-org">
+                            <span class="org-logo">🏆</span>
+                            <span>Future Business Leaders of America, Inc. (FBLA)</span>
+                        </div>
+                    </div>
+
+                    <div class="achievement-card">
+                        <div class="achievement-place third">3rd Place</div>
+                        <h3 class="achievement-title">Network Design</h3>
+                        <p class="achievement-event">State FBLA 2024 Conference</p>
+                        <p class="achievement-date">Apr 2024</p>
+                        <div class="achievement-org">
+                            <span class="org-logo">🏆</span>
+                            <span>Future Business Leaders of America, Inc. (FBLA)</span>
+                        </div>
+                    </div>
+
+                    <div class="achievement-card">
+                        <div class="achievement-place fourth">4th Place</div>
+                        <h3 class="achievement-title">Networking Infrastructures</h3>
+                        <p class="achievement-event">FBLA Regionals</p>
+                        <p class="achievement-date">Feb 2025</p>
+                        <div class="achievement-org">
+                            <span class="org-logo">🏆</span>
+                            <span>Future Business Leaders of America, Inc. (FBLA)</span>
+                        </div>
+                    </div>
+
+                    <div class="achievement-card">
+                        <div class="achievement-place fourth">4th Place</div>
+                        <h3 class="achievement-title">Management Information Systems</h3>
+                        <p class="achievement-event">National FBLA 2025 Conference</p>
+                        <p class="achievement-date">Jul 2025</p>
+                        <div class="achievement-org">
+                            <span class="org-logo">🏆</span>
+                            <span>Future Business Leaders of America, Inc. (FBLA)</span>
+                        </div>
+                    </div>
+
+                    <div class="achievement-card">
+                        <div class="achievement-place sixth">6th Place</div>
+                        <h3 class="achievement-title">Trebuchet</h3>
+                        <p class="achievement-event">State TSA 2025 Conference</p>
+                        <p class="achievement-date">Apr 2025</p>
+                        <div class="achievement-org">
+                            <span class="org-logo">🎯</span>
+                            <span>Technology Student Association</span>
+                        </div>
+                        <p class="achievement-desc">
+                            Worked with a team to engineer a trebuchet that was able to throw golf-like balls at a distance of nearly 30+ ft effectively. I handled engineering design, testing, and maintenance.
+                        </p>
+                    </div>
+
+                    <div class="achievement-card">
+                        <div class="achievement-place eighth">8th Place</div>
+                        <h3 class="achievement-title">Management Information Systems</h3>
+                        <p class="achievement-event">State FBLA 2025 Conference</p>
+                        <p class="achievement-date">Apr 2025</p>
+                        <div class="achievement-org">
+                            <span class="org-logo">🏆</span>
+                            <span>Future Business Leaders of America, Inc. (FBLA)</span>
+                        </div>
+                    </div>
+
+                    <div class="achievement-card">
+                        <div class="achievement-place thirteenth">13th Place</div>
+                        <h3 class="achievement-title">Retail Merchandising Series</h3>
+                        <p class="achievement-event">Area 2025 DECA Competition</p>
+                        <p class="achievement-date">2025</p>
+                        <div class="achievement-org">
+                            <span class="org-logo">💼</span>
+                            <span>DECA Inc.</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="socials" id="socials">
+            <div class="socials-container">
+                <h2 class="socials-title">Connect With Me</h2>
+                <div class="socials-grid">
+                    <a href="https://www.youtube.com/@cheesewx" target="_blank" class="social-button youtube">
+                        <span class="social-icon">📺</span>
+                        <span class="social-name">YouTube</span>
+                    </a>
+                    
+                    <a href="https://www.linkedin.com/in/viraat-nellutla-55b550322/" target="_blank" class="social-button linkedin">
+                        <span class="social-icon">💼</span>
+                        <span class="social-name">LinkedIn</span>
+                    </a>
+                    
+                    <a href="https://www.instagram.com/viraatnellutla88/" target="_blank" class="social-button instagram">
+                        <span class="social-icon">📷</span>
+                        <span class="social-name">Instagram</span>
+                    </a>
+                    
+                    <a href="https://x.com/vkn889" target="_blank" class="social-button twitter">
+                        <span class="social-icon">🐦</span>
+                        <span class="social-name">X (Twitter)</span>
+                    </a>
+                    
+                    <a href="https://www.facebook.com/profile.php?id=61579596419251" target="_blank" class="social-button facebook">
+                        <span class="social-icon">📘</span>
+                        <span class="social-name">Facebook</span>
+                    </a>
+                    
+                    <a href="https://github.com/vkn889" target="_blank" class="social-button github">
+                        <span class="social-icon">💻</span>
+                        <span class="social-name">GitHub</span>
+                    </a>
+                </div>
+                
+                <div class="copyright">
+                    <p>Copyright © 2025 Viraat Nellutla. All Rights Reserved.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script>
+        const hamburger = document.getElementById('hamburger');
+        const navLinks = document.getElementById('nav-links');
+
+        hamburger.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+
+        // Close menu when clicking on a link
+        document.querySelectorAll('.links a').forEach(link => {
+            link.addEventListener('click', () => {
+                navLinks.classList.remove('active');
+            });
+        });
+    </script>
+</body>
+</html>
